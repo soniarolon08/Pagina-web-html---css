@@ -1,0 +1,300 @@
+/* INDEX */
+
+/* Aplique un degradado al fondo, esto es general*/
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(rgba(5,10,5,0.80), rgba(230,190,151,0.30)), url(assets/fondo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar { 
+    width: 80%; /* NAVEGACION*/
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Nos separa el logo de los enlaces*/
+
+}
+
+.logo{ /*LOGO STARDROP*/
+    width: 190px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none; /* Nos saca el estilo predefinido de html*/
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none; /* MI propio estilo*/
+    color: #FFEBBE;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before{ /* Agrega la linea de abajo que va a ser animada*/
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{ /* Animacion de navegacion*/
+    width: 100%;
+}
+
+.titulo img{
+    margin: auto;
+    width: 600px;
+    height: 140px;
+    position: relative;
+    top: 30px; left: 650px;
+}
+
+
+.introduccion {
+    background-color: #FFEBBE;
+    width: 900px;
+    height: 320px;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-right: auto;
+    border: 5px solid #000;
+    display: block;
+    color: black;
+}
+
+.introduccion h1 {
+    font-size:30px;
+    color: #382A07;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 200px;
+}
+
+
+.introduccion p {
+    font-size: 20px;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.introduccion em {
+    font-size: 20px;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 700px;
+}
+/* NARRACION */
+
+.mysterybox img{
+    margin: auto;
+    width: 600px;
+    height: 150px;
+    position: relative;
+    top: 0px; left: 650px;
+}
+.narracion1, .narracion2, .narracion3, .narracion4, .narracion5, .narracion6 {
+    line-height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 70px;
+    font-size: 25px;
+    color: #302E29;
+}
+
+.narracionprincipal, .narracionprincipal3{
+    background-color: #FFEBBE;
+    width: 1000px;
+    height: 1550px;
+    margin-left: 370px;
+    margin-top: 50px;
+    border: 50px solid #B8A17E;
+}
+
+
+.narracionprincipal2, .narracionprincipal5{
+    background-color: #FFEBBE;
+    width: 1000px;
+    height: 1700px;
+    margin-left: 370px;
+    margin-top: 60px;
+    border: 50px solid #B8A17E;
+
+}
+
+
+.narracionprincipal4 {
+    background-color: #FFEBBE;
+    width: 1000px;
+    height: 1300px;
+    margin-top: 60px;
+    margin-left: 370px;
+    border: 50px solid #B8A17E;
+}
+
+
+.narracionprincipal6 {
+    background-color: #FFEBBE;
+    width: 1000px;
+    height: 550px;
+    margin-top: 60px;
+    margin-left: 370px;
+    border: 50px solid #B8A17E;
+}
+
+
+
+/* CONTROLES*/
+
+.box1{
+    background-color: #FFEBBE;
+    width: 800px;
+    height: 1100px;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: auto;
+    border: 50px solid #B8A17E;
+    display: block;
+    color: white;
+}
+
+.controlesdibujo img{ 
+    margin: auto;
+    width: 420px;
+    height: 150px;
+    position: relative;
+    top: 5px; left: 720px;
+}
+
+.mouse img{
+    width: 90%;
+    height: auto;
+    margin-top: -30px;
+    float: left;
+    
+}
+
+.teclas img{
+    width: 80%;
+    height: auto;
+    margin-top: -1200px;
+    float: right;
+    
+}
+
+.espacio img{
+    width: 75%;
+    height: auto;
+    margin-top: -850px;
+    float: left;
+}
+
+/* CONTACTO*/
+
+.contacto {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    color: #382A07;
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    background-color: #fff;
+    width: 35%;
+    height: 65%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px 0px;
+    width: 80%;
+    margin: 20px;
+    border-bottom: 1px solid #000;
+}
+
+button{
+    border-color: #382A07;
+    outline: none;
+    background-color: #FFEBBE;
+    padding: 20px;
+    width: 200px;
+    color: #000;
+    border-radius: 2px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* PERSONAJES */
+
+/* Boxes*/
+
+.personajecaja, .personajebarril, .personajeplaca, .personajepalancas, .personajepicosypalas, .personajegarrotes {
+    background-color: #FFEBBE;
+    width: 1100px;
+    height: 500px;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    border: 20px solid #B8A17E;
+    display: block;
+    color: black;
+}
+
+/* Nombres de los personajes*/ 
+.caja, .barril, .placa, .palancas, .picosypalas, .garrotes{
+    margin-top: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: #302E29;
+    font-weight: 400;
+    
+}
+
+/* Descripcion personajes*/
+.doncaja p, .donbarril p, .mrplaca p, .pandillapalancas p, .grupopicosypalas p, .garrotespoliciales p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+/* Ilustraciones personajes*/
+.doncaja img, .donbarril img, .mrplaca img, .pandillapalancas img, .grupopicosypalas img, .garrotespoliciales img{
+    width: 550px;
+    height: 500px;
+    float:left;
+    margin-left: -80px;
+    margin-right: -80px;
+    margin-bottom: 2px;
+    margin-top: -30px;
+}
